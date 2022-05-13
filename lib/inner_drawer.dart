@@ -1,6 +1,7 @@
 // Altered on 7/30/21 to provide a getter for current open state of Inner Drawer.
 // Altered on 09/24/2021 to support negative horizontal offset.
 // Alerted on 09/24/2021 to support devices with narrow screen widths.
+// Altered on 05/13/2022 to fix lint issues related to Flutter 3.
 
 // InnerDrawer is based on Drawer.
 // The source code of the Drawer has been re-adapted for Inner Drawer.
@@ -252,7 +253,7 @@ class InnerDrawerState extends State<InnerDrawer> with SingleTickerProviderState
 
   /// get width of screen after initState
   void _updateWidth() {
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       final RenderBox? box = _drawerKey.currentContext!.findRenderObject() as RenderBox?;
       //final RenderBox box = context.findRenderObject();
       if (box != null &&
