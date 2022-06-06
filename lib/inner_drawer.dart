@@ -2,6 +2,7 @@
 // Altered on 09/24/2021 to support negative horizontal offset.
 // Alerted on 09/24/2021 to support devices with narrow screen widths.
 // Altered on 05/13/2022 to fix lint issues related to Flutter 3.
+// Altered on 06/06/2022 to fix _updateWidth() not taking the orientation into consideration.
 
 // InnerDrawer is based on Drawer.
 // The source code of the Drawer has been re-adapted for Inner Drawer.
